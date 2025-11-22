@@ -4,7 +4,6 @@ const techs = [
   "Java", "Spring Boot", "TypeScript", "React",
   "Next.js", "Node.js", "Express", "Vite",
   "PostgreSQL", "MySQL", "MongoDB", "Docker",
-  "System Design", "UI/UX design",
 ];
 
 const TechStack: React.FC = () => {
