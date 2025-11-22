@@ -159,13 +159,13 @@ const App: React.FC = () => {
                 {/* Bio */}
                 <div className="font-sans text-muted text-lg leading-loose space-y-6">
                   <p>
-                    I'm <strong>Truong Manh Thang</strong>, a Software Engineering graduate from FPT University. I bridge the gap between complex backend architecture and intuitive user experiences.
+                    I'm <strong>Truong Manh Thang</strong>, a Software Engineering specializing in full-stack development graduated from FPT University.
                   </p>
                   <p>
-                    As an indie developer and aspiring BrSE, I focus on building complete, polished web applications. I'm constantly refining my craft through real-world projects, focusing on system design and modern UI/UX patterns.
+                    I build products end-to-end — from backend architecture to UI development — and I enjoy shipping small, polished apps as an indie developer.
                   </p>
                   <p>
-                   When I'm not coding, I'm leveling up my Japanese language skills (aiming for JLPT N2) to broaden my horizons in the tech world.
+                   I’m currently pursuing the BrSE path while deepening my skills in system design, software architecture, and modern web technologies.
                   </p>
                 </div>
 
