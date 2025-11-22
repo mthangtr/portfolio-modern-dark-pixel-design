@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mthangtr | Indie Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              background: '#0B0B0B',
+              surface: '#1A1A1A',
+              text: '#FFFFFF',
+              muted: '#AFAFAF',
+              border: '#333333',
+            },
+            fontFamily: {
+              pixel: ['"Pixelify Sans"', 'cursive'],
+              sans: ['"Inter"', 'sans-serif'],
+            },
+            animation: {
+              'cursor-blink': 'blink 1s step-end infinite',
+              'scanline': 'scanline 8s linear infinite',
+            },
+            keyframes: {
+              blink: {
+                '0%, 100%': { opacity: '1' },
+                '50%': { opacity: '0' },
+              },
+              scanline: {
+                '0%': { transform: 'translateY(-100%)' },
+                '100%': { transform: 'translateY(100%)' },
+              }
+            }
+          },
+        },
+      };
+    </script>
+    <!-- Google Fonts: Pixelify Sans (Pixel look) and Inter (Clean modern look) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Pixelify+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background-color: #0B0B0B;
+        color: #FFFFFF;
+        font-family: 'Inter', sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0B0B0B; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #333; 
+        border: 2px solid #0B0B0B;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+      }
+      
+      .pixel-corners {
+        clip-path: polygon(
+          0px 4px, 4px 4px, 4px 0px, 
+          calc(100% - 4px) 0px, calc(100% - 4px) 4px, 100% 4px, 
+          100% calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) 100%, 
+          4px 100%, 4px calc(100% - 4px), 0px calc(100% - 4px)
+        );
+      }
+
+      .image-dither {
+        filter: grayscale(100%) contrast(1.2) brightness(0.9);
+        image-rendering: pixelated;
+      }
+      
+      /* Scanline effect overlay */
+      .scanline-container {
+        position: relative;
+        overflow: hidden;
+      }
+      .scanline-container::after {
+        content: " ";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+        z-index: 2;
+        background-size: 100% 2px, 3px 100%;
+        pointer-events: none;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
