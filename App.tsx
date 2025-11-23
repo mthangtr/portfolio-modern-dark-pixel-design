@@ -20,14 +20,22 @@ const App: React.FC = () => {
   const projects: Project[] = [
     {
       id: '1',
-      title: 'Neuromancer UI',
-      description: 'A cyberpunk-inspired component library for React built with pure CSS and styled-components.',
-      tags: ['React', 'TypeScript', 'Storybook'],
-      imageUrl: 'https://picsum.photos/id/134/800/450',
-      link: '#'
+      title: 'FlashQuizes',
+      description: 'Production-ready Japanese vocab SaaS with AI flashcards, interactive quizzes, subscriptions, and full observability.',
+      tags: ['Next.js 15', 'MongoDB', 'Redis', 'AI'],
+      imageUrl: 'img/flashquizes.png',
+      link: 'https://github.com/mthangtr/flashquizes'
     },
     {
       id: '2',
+      title: 'Training Management System',
+      description: 'Full-stack TMS for scheduling, attendance, and curriculum workflows built with React + Spring Boot + PostgreSQL.',
+      tags: ['React 19', 'Vite', 'Spring Boot 3', 'PostgreSQL'],
+      imageUrl: 'img/tms.png',
+      link: 'https://github.com/SEP490-FA25-G25'
+    },
+    {
+      id: '3',
       title: 'Echo Base',
       description: 'Real-time collaborative workspace for remote dev teams using WebSockets and CRDTs.',
       tags: ['Node.js', 'Socket.io', 'Redis'],
@@ -35,7 +43,7 @@ const App: React.FC = () => {
       link: '#'
     },
     {
-      id: '3',
+      id: '4',
       title: 'Void Linter',
       description: 'An AI-powered code analysis tool that detects logical fallacies in business logic.',
       tags: ['Python', 'FastAPI', 'OpenAI'],
@@ -125,7 +133,7 @@ const App: React.FC = () => {
                 <div className="absolute inset-0 border-[6px] border-white opacity-20 rotate-3 transition-transform duration-300 group-hover:rotate-6"></div>
                 <div className="absolute inset-0 border-[6px] border-zinc-800 -rotate-3 bg-surface transition-transform duration-300 group-hover:-rotate-6"></div>
                 <img 
-                  src="https://picsum.photos/id/64/800/800" 
+                  src="img\main-avatar.png" 
                   alt="Avatar" 
                   className="absolute inset-0 w-full h-full object-cover grayscale contrast-125 brightness-90 p-2 image-dither"
                 />
