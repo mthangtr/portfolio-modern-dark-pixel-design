@@ -119,18 +119,22 @@ const App: React.FC = () => {
           </div>
 
           {/* Right: Avatar */}
-          <div className="order-2 flex justify-center md:justify-end">
-             <div className="group relative w-80 h-80 md:w-96 md:h-96 lg:w-[32rem] lg:h-[32rem] cursor-pointer active:scale-95 hover:scale-105 transition-transform duration-300">
-                {/* Pixel border decoration */}
-                <div className="absolute inset-0 border-[6px] border-white opacity-20 rotate-3 transition-transform duration-300 group-hover:rotate-6"></div>
-                <div className="absolute inset-0 border-[6px] border-zinc-800 -rotate-3 bg-surface transition-transform duration-300 group-hover:-rotate-6"></div>
-                <img 
-                  src="img\main-avatar.png" 
-                  alt="Avatar" 
-                  className="absolute inset-0 w-full h-full object-cover grayscale contrast-125 brightness-90 p-2 image-dither"
-                />
-                <div className="absolute -bottom-8 -left-8 bg-background border-2 border-white p-4 font-pixel text-sm shadow-[6px_6px_0px_0px_rgba(255,255,255,1)]">
-                  ASPIRING BrSE
+          <div className="order-2 flex justify-center md:justify-end relative">
+             <div className="relative w-72 h-72 md:w-96 md:h-96 lg:w-[32rem] lg:h-[32rem]">
+                {/* Decorative grid behind */}
+                <div className="absolute -top-4 -left-4 w-full h-full border border-white/20 opacity-50"></div>
+                <div className="absolute -bottom-4 -right-4 w-full h-full border border-white/20 opacity-50"></div>
+                
+                {/* Image Container */}
+                <div className="w-full h-full bg-surface border-2 border-white overflow-hidden relative shadow-[4px_4px_0px_0px_#FFFFFF] active:translate-x-[2px] active:translate-y-[2px] active:shadow-[2px_2px_0px_0px_#FFFFFF] transition-all duration-150 ease-in-out">
+                    <div className="absolute top-0 left-0 w-full h-full bg-[linear-gradient(to_bottom,transparent_50%,rgba(0,0,0,0.5)_51%)] bg-[length:100%_4px] pointer-events-none z-10"></div>
+                    <img 
+                        src="img/main-avatar.png" 
+                        alt="Avatar" 
+                        className="w-full h-full object-cover grayscale contrast-125"
+                    />
+                    {/* Dither overlay */}
+                    <div className="absolute inset-0 bg-[radial-gradient(#333_1px,transparent_1px)] bg-[length:4px_4px] opacity-20 pointer-events-none"></div>
                 </div>
              </div>
           </div>
