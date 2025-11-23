@@ -42,14 +42,6 @@ const App: React.FC = () => {
       imageUrl: 'https://picsum.photos/id/2/800/450',
       link: '#'
     },
-    {
-      id: '4',
-      title: 'Void Linter',
-      description: 'An AI-powered code analysis tool that detects logical fallacies in business logic.',
-      tags: ['Python', 'FastAPI', 'OpenAI'],
-      imageUrl: 'https://picsum.photos/id/60/800/450',
-      link: '#'
-    }
   ];
 
   const posts: BlogPost[] = [

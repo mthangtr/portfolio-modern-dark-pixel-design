@@ -8,7 +8,12 @@ interface PixelCardProps {
 
 const PixelCard: React.FC<PixelCardProps> = ({ project }) => {
   return (
-    <div className="group relative bg-surface border border-border p-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-[8px_8px_0px_0px_rgba(40,40,40,1)]">
+    <a
+      href={project.link}
+      target="_blank"
+      rel="noreferrer"
+      className="group block relative bg-surface border border-border p-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-[8px_8px_0px_0px_rgba(40,40,40,1)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+    >
       {/* Pixel Corners Effect via CSS clip-path in global styles or pseudo elements */}
       <div className="absolute inset-0 border-2 border-transparent group-hover:border-white/20 pointer-events-none transition-colors duration-300" />
       
@@ -46,7 +51,7 @@ const PixelCard: React.FC<PixelCardProps> = ({ project }) => {
           ))}
         </div>
       </div>
-    </div>
+    </a>
   );
 };
 
