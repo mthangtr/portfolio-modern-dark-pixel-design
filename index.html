@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="icon" type="image/png" href="/img/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>mthangtr | Indie Developer</title>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -96,6 +96,221 @@
         z-index: 2;
         background-size: 100% 2px, 3px 100%;
         pointer-events: none;
+      }
+
+      /* Glitch text effect */
+      .glitch {
+        position: relative;
+        animation: glitch-skew 1s infinite linear alternate-reverse;
+      }
+      .glitch::before,
+      .glitch::after {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .glitch::before {
+        left: 2px;
+        text-shadow: -2px 0 #ff00c1;
+        clip: rect(44px, 450px, 56px, 0);
+        animation: glitch-anim 5s infinite linear alternate-reverse;
+      }
+      .glitch::after {
+        left: -2px;
+        text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1;
+        animation: glitch-anim2 1s infinite linear alternate-reverse;
+      }
+
+      @keyframes glitch-anim {
+        0% { clip: rect(10px, 9999px, 31px, 0); transform: skew(0.7deg); }
+        5% { clip: rect(70px, 9999px, 71px, 0); transform: skew(0.73deg); }
+        10% { clip: rect(40px, 9999px, 45px, 0); transform: skew(0.27deg); }
+        15% { clip: rect(80px, 9999px, 98px, 0); transform: skew(0.71deg); }
+        20% { clip: rect(29px, 9999px, 60px, 0); transform: skew(0.13deg); }
+        25% { clip: rect(85px, 9999px, 99px, 0); transform: skew(0.08deg); }
+        30% { clip: rect(19px, 9999px, 48px, 0); transform: skew(0.65deg); }
+        35% { clip: rect(66px, 9999px, 88px, 0); transform: skew(0.5deg); }
+        40% { clip: rect(30px, 9999px, 67px, 0); transform: skew(0.22deg); }
+        45% { clip: rect(15px, 9999px, 25px, 0); transform: skew(0.15deg); }
+        50% { clip: rect(42px, 9999px, 58px, 0); transform: skew(0.1deg); }
+        55% { clip: rect(78px, 9999px, 92px, 0); transform: skew(0.35deg); }
+        60% { clip: rect(55px, 9999px, 75px, 0); transform: skew(0.18deg); }
+        65% { clip: rect(22px, 9999px, 35px, 0); transform: skew(0.42deg); }
+        70% { clip: rect(90px, 9999px, 100px, 0); transform: skew(0.28deg); }
+        75% { clip: rect(5px, 9999px, 18px, 0); transform: skew(0.55deg); }
+        80% { clip: rect(62px, 9999px, 82px, 0); transform: skew(0.05deg); }
+        85% { clip: rect(38px, 9999px, 52px, 0); transform: skew(0.38deg); }
+        90% { clip: rect(72px, 9999px, 85px, 0); transform: skew(0.62deg); }
+        95% { clip: rect(12px, 9999px, 28px, 0); transform: skew(0.32deg); }
+        100% { clip: rect(48px, 9999px, 68px, 0); transform: skew(0.48deg); }
+      }
+
+      @keyframes glitch-anim2 {
+        0% { clip: rect(65px, 9999px, 119px, 0); transform: skew(0.65deg); }
+        5% { clip: rect(52px, 9999px, 74px, 0); transform: skew(0.08deg); }
+        10% { clip: rect(79px, 9999px, 119px, 0); transform: skew(0.6deg); }
+        15% { clip: rect(75px, 9999px, 102px, 0); transform: skew(0.2deg); }
+        20% { clip: rect(20px, 9999px, 56px, 0); transform: skew(0.42deg); }
+        25% { clip: rect(53px, 9999px, 78px, 0); transform: skew(0.14deg); }
+        30% { clip: rect(94px, 9999px, 118px, 0); transform: skew(0.71deg); }
+        35% { clip: rect(38px, 9999px, 62px, 0); transform: skew(0.35deg); }
+        40% { clip: rect(68px, 9999px, 95px, 0); transform: skew(0.55deg); }
+        45% { clip: rect(25px, 9999px, 48px, 0); transform: skew(0.22deg); }
+        50% { clip: rect(82px, 9999px, 108px, 0); transform: skew(0.68deg); }
+        55% { clip: rect(45px, 9999px, 72px, 0); transform: skew(0.08deg); }
+        60% { clip: rect(10px, 9999px, 38px, 0); transform: skew(0.45deg); }
+        65% { clip: rect(58px, 9999px, 85px, 0); transform: skew(0.18deg); }
+        70% { clip: rect(88px, 9999px, 115px, 0); transform: skew(0.52deg); }
+        75% { clip: rect(32px, 9999px, 55px, 0); transform: skew(0.28deg); }
+        80% { clip: rect(72px, 9999px, 98px, 0); transform: skew(0.62deg); }
+        85% { clip: rect(15px, 9999px, 42px, 0); transform: skew(0.12deg); }
+        90% { clip: rect(62px, 9999px, 88px, 0); transform: skew(0.48deg); }
+        95% { clip: rect(85px, 9999px, 112px, 0); transform: skew(0.32deg); }
+        100% { clip: rect(42px, 9999px, 68px, 0); transform: skew(0.58deg); }
+      }
+
+      @keyframes glitch-skew {
+        0% { transform: skew(-2deg); }
+        10% { transform: skew(1deg); }
+        20% { transform: skew(-0.5deg); }
+        30% { transform: skew(0.8deg); }
+        40% { transform: skew(1deg); }
+        50% { transform: skew(-1.2deg); }
+        60% { transform: skew(-0.3deg); }
+        70% { transform: skew(0.6deg); }
+        80% { transform: skew(-0.8deg); }
+        90% { transform: skew(0.4deg); }
+        100% { transform: skew(0deg); }
+      }
+
+      /* Typing cursor effect */
+      .typing-cursor::after {
+        content: '|';
+        animation: blink 1s step-end infinite;
+        margin-left: 2px;
+        color: #00ff9f;
+      }
+
+      /* CRT screen effect */
+      .crt-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 9999;
+        background: 
+          linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.15) 50%),
+          linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.03));
+        background-size: 100% 4px, 3px 100%;
+        opacity: 0.3;
+      }
+
+      /* Flicker animation for neon effects */
+      @keyframes flicker {
+        0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+          opacity: 1;
+        }
+        20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+          opacity: 0.4;
+        }
+      }
+
+      .neon-text {
+        text-shadow: 
+          0 0 5px #fff,
+          0 0 10px #fff,
+          0 0 20px #00ff9f,
+          0 0 30px #00ff9f,
+          0 0 40px #00ff9f;
+        animation: flicker 3s infinite alternate;
+      }
+
+      /* Floating animation */
+      @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+      }
+
+      .float-animation {
+        animation: float 3s ease-in-out infinite;
+      }
+
+      /* Pixel border animation */
+      @keyframes pixel-border-anim {
+        0%, 100% { box-shadow: 4px 4px 0 0 #fff; }
+        50% { box-shadow: 6px 6px 0 0 #00ff9f; }
+      }
+
+      .pixel-border-animated {
+        animation: pixel-border-anim 2s ease-in-out infinite;
+      }
+
+      /* Terminal typing effect */
+      .terminal-text {
+        font-family: 'Courier New', monospace;
+        background: linear-gradient(90deg, #00ff9f 50%, transparent 50%);
+        background-size: 200% 100%;
+        -webkit-background-clip: text;
+        background-clip: text;
+      }
+
+      /* Card shimmer effect */
+      .shimmer {
+        position: relative;
+        overflow: hidden;
+      }
+      .shimmer::after {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: linear-gradient(
+          to right,
+          transparent 0%,
+          rgba(255, 255, 255, 0.03) 50%,
+          transparent 100%
+        );
+        transform: rotate(30deg);
+        animation: shimmer 8s infinite;
+      }
+
+      @keyframes shimmer {
+        0% { transform: translateX(-100%) rotate(30deg); }
+        100% { transform: translateX(100%) rotate(30deg); }
+      }
+
+      /* Matrix rain effect for background */
+      .matrix-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.03;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Ctext x='20' y='20' font-family='monospace' font-size='10' fill='%2300ff9f' text-anchor='middle'%3E01%3C/text%3E%3C/svg%3E");
+        animation: matrix-scroll 20s linear infinite;
+      }
+
+      @keyframes matrix-scroll {
+        0% { background-position: 0 0; }
+        100% { background-position: 0 100vh; }
+      }
+
+      /* Skills bar animation */
+      @keyframes skill-fill {
+        from { width: 0; }
+      }
+
+      .skill-bar {
+        animation: skill-fill 1.5s ease-out forwards;
       }
     </style>
   <script type="importmap">

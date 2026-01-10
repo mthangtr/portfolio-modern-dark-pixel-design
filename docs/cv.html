@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truong Manh Thang - Backend Developer CV</title>
+    <link rel="stylesheet" href="cv-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cv-container">
+        <header class="cv-header">
+    <div class="header-main">
+        <h1 class="name">TRUONG MANH THANG</h1>
+        <p class="role">Backend Developer</p>
+    </div>
+
+    <div class="contact-grid">
+        <div class="contact-item">
+            <span>mthangtr@gmail.com</span>
+            <span>+84 943 902 004</span>
+            <span>Hanoi, Vietnam</span>
+        </div>
+        
+        <div class="links-item">
+            <a href="https://mthangtr.me" target="_blank">mthangtr.me</a>
+            <a href="https://github.com/mthangtr" target="_blank">github.com/mthangtr</a>
+            <a href="https://linkedin.com/in/mthangtr/" target="_blank">linkedin.com/in/mthangtr</a>
+        </div>
+    </div>
+</header>
+
+        <section class="section">
+            <h2 class="section-title">Professional Summary</h2>
+            <p class="summary-text">
+                Backend-focused Full-stack Developer with a passion for building scalable SaaS solutions. Beyond mastering the Java/Spring Boot ecosystem, I leverage Next.js and TypeScript to transform ideas into production-ready products. I don’t just write code; I build tools that solve real problems, with a focus on clean architecture and high performance. Fluent in English and Japanese (JLPT N3), ready to collaborate in global and Japanese-speaking environments.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <span class="skill-label">Languages:</span>
+                    <span class="skill-list"><strong>Java (Core/Advanced)</strong>, SQL, TypeScript, JavaScript</span>
+                </div>
+                <div class="skill-category">
+                    <span class="skill-label">Backend:</span>
+                    <span class="skill-list"><strong>Spring Boot 3+</strong>, Spring Security, JPA/Hibernate, RESTful APIs</span>
+                </div>
+                <div class="skill-category">
+                    <span class="skill-label">Database & Cloud:</span>
+                    <span class="skill-list">PostgreSQL, MySQL, SQL Server, MongoDB, Docker, Supabase</span>
+                </div>
+                <div class="skill-category">
+                    <span class="skill-label">Frontend Exp:</span>
+                    <span class="skill-list">Experience building SaaS/Tools with Next.js, React.js, Tailwind CSS</span>
+                </div>
+                <div class="skill-category">
+                    <span class="skill-label">Tools & Methods:</span>
+                    <span class="skill-list">Git, Agile/Scrum, Postman, Swagger/OpenAPI</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="experience-item">
+                <div class="exp-header">
+                    <h3 class="exp-role">FPT Software Fresher</h3>
+                    <span class="exp-date">05/2025 – 01/2026</span>
+                </div>
+                <p class="exp-company">FPT Software | Hanoi, Vietnam</p>
+                <ul class="exp-details">
+                    <li>Completed intensive training in enterprise-level software development, focusing on <strong>Java Advanced</strong>, <strong>Software Testing</strong>, and professional coding standards.</li>
+                    <li>Quickly adapted to Agile/Scrum workflows, actively participating in daily stand-ups and sprint planning.</li>
+                    <li>Collaborated with team members to deliver project modules, utilizing Git for version control and code reviews.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Key Projects</h2>
+            
+            <div class="project-item">
+                <div class="project-header">
+                    <h3 class="project-name">Training Management System (TMS)</h3>
+                    <span class="project-links">
+                        <a href="https://github.com/SEP490-FA25-G25">github.com/SEP490-FA25-G25</a>
+                    </span>
+                </div>
+                <p class="project-desc">Capstone Project (SEP490) - A comprehensive system for managing language center operations.</p>
+                <ul class="project-details">
+                    <li><strong>Backend Architecture:</strong> Designed a robust Layered Architecture using <strong>Spring Boot 3.5</strong> & <strong>Java 21</strong>, ensuring scalability and maintainability.</li>
+                    <li><strong>Advanced Implementation:</strong> Integrated <strong>WebSocket</strong> for real-time notifications and <strong>@Async</strong> processing for background tasks (emails, scheduled jobs).</li>
+                    <li><strong>Database Optimization:</strong> Engineered a schema-first <strong>PostgreSQL</strong> database with 40+ tables, optimizing queries with indexing and soft-delete patterns.</li>
+                    <li><strong>Security:</strong> Implemented Role-Based Access Control (RBAC) for 8 distinct user roles using <strong>Spring Security</strong> and JWT.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="project-header">
+                    <h3 class="project-name">Flashquizes - AI Language Learning</h3>
+                    <span class="project-links"><a href="https://github.com/mthangtr/flashquizes">github.com/mthangtr/flashquizes</a></span>
+                </div>
+                <p class="project-desc">SaaS platform for language learning built to apply full-stack capabilities.</p>
+                <ul class="project-details">
+                    <li><strong>System Integration:</strong> Integrated <strong>Gemini/GPT-4</strong> via OpenRouter API to generate dynamic content and provide contextual evaluation.</li>
+                    <li><strong>Performance & Logic:</strong> Handled complex logic for spaced repetition algorithms and rate limiting using <strong>Redis</strong>.</li>
+                    <li><strong>Payment:</strong> Implemented secure payment processing via SePay/VietQR webhooks.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="project-header">
+                    <h3 class="project-name">Mini-Drive Storage</h3>
+                    <span class="project-links"><a href="https://github.com/mthangtr/mini-drive-storage">github.com/mthangtr/mini-drive-storage</a></span>
+                </div>
+                <p class="project-desc">Secure cloud storage solution for file management.</p>
+                <ul class="project-details">
+                    <li><strong>Backend Logic:</strong> Developed core file management logic using <strong>Spring Boot 4</strong>, handling recursive folder structures and multi-file uploads.</li>
+                    <li><strong>Async Processing:</strong> Implemented asynchronous ZIP generation for folder downloads to optimize user experience.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="education-item" style="margin-bottom: 0.1rem;">
+                <div class="edu-header">
+                    <h3 class="edu-school">FPT University</h3>
+                    <span class="edu-date">Graduated 2026</span>
+                </div>
+                <p class="edu-degree">Bachelor of Software Engineering</p>
+                <p class="edu-detail">Specialized Program: BrSE JS (Bridge Software Engineer - Japanese Market focused)</p>
+                <p class="edu-detail"><strong>GPA: 3.2/4.0</strong></p>
+            </div>
+            <div class="certifications">
+                <p><strong>Languages:</strong> English IELTS 6.5 (Conversational) | Japanese JLPT N3 Equivalent</p>
+            </div>
+        </section>
+    </div>
+    <script src="cv-script.js"></script>
+</body>
+</html>
