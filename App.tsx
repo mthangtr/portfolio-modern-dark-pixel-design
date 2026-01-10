@@ -286,7 +286,7 @@ const App: React.FC = () => {
               <ul className="space-y-3 text-sm text-muted">
                 <li className="flex items-start gap-2">
                   <span className="text-green-400 mt-1">▸</span>
-                  Completed intensive training in enterprise-level software development, focusing on <strong className="text-white">Java Advanced</strong> and <strong className="text-white">Software Testing</strong>
+                  Completed intensive training in enterprise-level software development, focusing on Java Advanced and Software Testing
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-green-400 mt-1">▸</span>
@@ -294,7 +294,7 @@ const App: React.FC = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-green-400 mt-1">▸</span>
-                  Collaborated with team members using Git for version control and code reviews
+                  Collaborated with team members with real projects and code reviews
                 </li>
               </ul>
             </div>
