@@ -36,7 +36,7 @@ const App: React.FC = () => {
     {
       id: '1',
       title: 'FlashQuizes - AI SaaS',
-      description: 'From generic vocab lists to personalized AI coaching. Engineered spaced-repetition algorithms (SM-2) backed by Redis for performance. Integrated Gemini/GPT-4 for dynamic content generation and SePay for automated subscription handling.',
+      description: 'AI-powered flashcard and quiz platform for language learning — built with Next.js, TypeScript, MongoDB, and Redis. Features smart flashcard generation, interactive quizzes, premium subscriptions, and detailed learning analytics.',
       tags: ['Next.js 15', 'Redis', 'AI Integration', 'Webhook'],
       imageUrl: '/img/flashquizes.png',
       link: 'https://github.com/mthangtr/flashquizes'
@@ -192,6 +192,7 @@ const App: React.FC = () => {
             {/* Column 1: Title (Sidebar style) */}
             <div className="md:col-span-12 lg:col-span-3">
               <SectionHeading title="# About_Me" />
+              <h2 className="sr-only">About Me - Fullstack Developer Specializing in Enterprise Architecture</h2>
             </div>
             
             {/* Main Content Area (Spans remaining columns) */}
@@ -272,6 +273,7 @@ const App: React.FC = () => {
       <section id="experience" className="py-24 border-t border-zinc-900">
         <div className="container mx-auto px-6">
           <SectionHeading title="Experience_" align="left" />
+          <h2 className="sr-only">Professional Experience & Education</h2>
           
           <div className="grid lg:grid-cols-2 gap-8 mt-12">
             {/* Work Experience */}
@@ -341,6 +343,7 @@ const App: React.FC = () => {
       <section id="projects" className="py-24 border-t border-zinc-900 bg-surface/20">
         <div className="container mx-auto px-6">
           <SectionHeading title="Selected_Works" align="left" />
+          <h2 className="sr-only">Selected Projects - Spring Boot & Next.js Applications</h2>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map(project => (
@@ -360,6 +363,7 @@ const App: React.FC = () => {
       <section id="contact" className="py-24 pb-32 border-t border-zinc-900 bg-surface/20">
         <div className="container mx-auto px-6 text-center">
           <SectionHeading title="Get_In_Touch" align="center" />
+          <h2 className="sr-only">Contact - Available for Remote Work & Collaborations</h2>
           
           <p className="font-sans text-muted mb-8 max-w-xl mx-auto">
             Currently available for freelance projects and open source collaborations. 
@@ -404,9 +408,14 @@ const App: React.FC = () => {
 
       {/* Footer */}
       <footer className="py-12 border-t border-zinc-900 bg-background flex flex-col items-center justify-center gap-6">
+        {/* Last Updated - Important for freshness signals */}
+        <div className="text-xs text-zinc-600 text-center py-2 border border-zinc-900 px-4 font-mono">
+          Last updated: January 11, 2026 | Status: <span className="text-green-400">Available for work</span>
+        </div>
+        
         {/* Crafted by text */}
         <div className="font-sans text-sm text-zinc-500 flex items-center gap-2">
-          Crafted by mthangtr <span className="text-zinc-700">—</span> Entrepreneur & Indie Maker
+          Crafted by mthangtr <span className="text-zinc-700">—</span> Fullstack Developer & Bridge Engineer
         </div>
         
         {/* Pixel Heart Icon */}
