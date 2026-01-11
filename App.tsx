@@ -131,8 +131,8 @@ const App: React.FC = () => {
             
             <p className="font-sans text-lg md:text-xl text-muted mb-6 max-w-xl leading-relaxed">
               I don't just write code; I ship complete <span className="text-white font-medium">SaaS products</span>. 
-              Bridging the gap between rock-solid <span className="text-white font-medium">Spring Boot</span> backends and 
-              interactive <span className="text-white font-medium">Next.js</span> experiences.
+              Deep expertise in <span className="text-white font-medium">Java & Spring Boot</span> for robust backends, using 
+              <span className="text-white font-medium"> Next.js</span> to build, iterate, and ship fast.
             </p>
             
             <div className="flex items-center gap-4 text-sm text-zinc-500 mb-10">
@@ -299,7 +299,7 @@ const App: React.FC = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-green-400 mt-1">▸</span>
-                  Collaborated on large-scale codebases using Git flow, conducting code reviews to ensure maintainability and clean architecture.
+                  Collaborated with cross-functional teams on real client projects, delivering end-to-end solutions from requirements to deployment.
                 </li>
               </ul>
             </div>
