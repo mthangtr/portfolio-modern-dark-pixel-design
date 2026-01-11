@@ -9,7 +9,7 @@ import { Project, BlogPost } from './types';
 const App: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
   const [typedText, setTypedText] = useState('');
-  const fullText = 'Entrepreneur • Indie Maker • Full-stack Developer';
+  const fullText = 'Building Systems • Shipping Products • Bridge SE (N3)';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,25 +35,25 @@ const App: React.FC = () => {
   const projects: Project[] = [
     {
       id: '1',
-      title: 'FlashQuizes',
-      description: 'Production-ready Japanese vocab SaaS with AI flashcards (Gemini/GPT-4), spaced repetition algorithms, Redis caching, and secure payments via SePay/VietQR.',
-      tags: ['Next.js 15', 'MongoDB', 'Redis', 'AI'],
+      title: 'FlashQuizes - AI SaaS',
+      description: 'From generic vocab lists to personalized AI coaching. Engineered spaced-repetition algorithms (SM-2) backed by Redis for performance. Integrated Gemini/GPT-4 for dynamic content generation and SePay for automated subscription handling.',
+      tags: ['Next.js 15', 'Redis', 'AI Integration', 'Webhook'],
       imageUrl: '/img/flashquizes.png',
       link: 'https://github.com/mthangtr/flashquizes'
     },
     {
       id: '2',
       title: 'Training Management System',
-      description: 'Capstone project: Full-stack TMS with WebSocket real-time notifications, 40+ PostgreSQL tables, RBAC for 8 user roles, async processing.',
-      tags: ['Spring Boot 3', 'Java 21', 'PostgreSQL', 'WebSocket'],
+      description: 'Enterprise-grade educational platform. Solved scalability challenges with a robust Layered Architecture, handling aspect-oriented background tasks (Async/Mail) and real-time WebSocket notifications for 8 distinct user roles.',
+      tags: ['Spring Boot 3', 'PostgreSQL', 'WebSocket', 'RBAC'],
       imageUrl: '/img/tms.png',
       link: 'https://github.com/SEP490-FA25-G25'
     },
     {
       id: '3',
       title: 'Mini-Drive Storage',
-      description: 'Secure cloud storage solution with recursive folder management, multi-file uploads, and async ZIP generation for optimal download experience.',
-      tags: ['Spring Boot', 'React', 'Cloud Storage'],
+      description: 'Secure cloud storage solution. Handled complex recursive folder management logic and multi-file uploads. Optimized UX with asynchronous background ZIP generation for large downloads.',
+      tags: ['Spring Boot', 'Complex Logic', 'Async Processing'],
       imageUrl: '/img/mini-drive.png',
       link: 'https://github.com/mthangtr/mini-drive-storage'
     },
@@ -130,9 +130,9 @@ const App: React.FC = () => {
             </div>
             
             <p className="font-sans text-lg md:text-xl text-muted mb-6 max-w-xl leading-relaxed">
-              <span className="text-white font-medium">Entrepreneur</span> building scalable SaaS products. 
-              Shipping one project every month as an <span className="text-white font-medium">indie maker</span>. 
-              Tech stack: <span className="text-white font-medium">Java/Spring Boot</span> & <span className="text-white font-medium">Next.js</span>.
+              I don't just write code; I ship complete <span className="text-white font-medium">SaaS products</span>. 
+              Bridging the gap between rock-solid <span className="text-white font-medium">Spring Boot</span> backends and 
+              interactive <span className="text-white font-medium">Next.js</span> experiences.
             </p>
             
             <div className="flex items-center gap-4 text-sm text-zinc-500 mb-10">
@@ -152,7 +152,7 @@ const App: React.FC = () => {
                 View Github
               </PixelButton>
               <PixelButton variant="secondary" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth'})}>
-                Contact Me
+                Lets_Collaborate
               </PixelButton>
             </div>
           </div>
@@ -210,20 +210,25 @@ const App: React.FC = () => {
                   <div className="font-mono text-sm text-muted space-y-3">
                     <p className="text-green-400">$ whoami</p>
                     <p className="pl-4 text-white">Truong Manh Thang (mthangtr)</p>
-                    <p className="text-green-400 mt-4">$ cat summary.txt</p>
+                    
+                    <p className="text-green-400 mt-4">$ cat about_me.txt</p>
                     <p className="pl-4 leading-relaxed">
-                      Backend-focused Full-stack Developer with a passion for building scalable SaaS solutions. 
-                      Beyond mastering the <span className="text-cyan-400">Java/Spring Boot</span> ecosystem, 
-                      I leverage <span className="text-cyan-400">Next.js</span> and <span className="text-cyan-400">TypeScript</span> to 
-                      transform ideas into production-ready products.
+                      <span className="text-white block mb-1">=== THE "HYBRID" DEVELOPER ===</span>
+                      I operate at the intersection of Logic and Product. While my core strength lies in 
+                      designing scalable architectures with <span className="text-cyan-400">Java/Spring Boot</span>, 
+                      I'm equally obsessed with the pixels users actually touch in <span className="text-cyan-400">Next.js</span>.
                     </p>
-                    <p className="text-green-400 mt-4">$ echo $FOCUS</p>
+
+                    <p className="text-green-400 mt-4">$ echo $WHY_ME</p>
+                    <div className="pl-4 space-y-1">
+                      <p>🛠 Product Mindset: I build tools that solve actual problems.</p>
+                      <p>🌏 Bridge Engineer: Fluent in English (IELTS 6.5) & Japanese (N3).</p>
+                      <p>🚀 Bias for Action: I test, I ship, I iterate.</p>
+                    </div>
+
+                    <p className="text-green-400 mt-4">$ cat current_focus.txt</p>
                     <p className="pl-4">
-                      Clean architecture • High performance • BrSE path
-                    </p>
-                    <p className="text-green-400 mt-4">$ cat languages.txt</p>
-                    <p className="pl-4">
-                      🇻🇳 Vietnamese (Native) | 🇺🇸 English (IELTS 6.5) | 🇯🇵 Japanese (JLPT N3)
+                      Seeking high-growth Startup environments. I thrive where Engineering meets Product — building scalable MVPs and iterating fast. Also polishing Japanese business comms.
                     </p>
                   </div>
                 </div>
@@ -286,15 +291,15 @@ const App: React.FC = () => {
               <ul className="space-y-3 text-sm text-muted">
                 <li className="flex items-start gap-2">
                   <span className="text-green-400 mt-1">▸</span>
-                  Completed intensive training in enterprise-level software development, focusing on Java Advanced and Software Testing
+                  Developed enterprise-grade modules using Java Advanced, strictly following industry coding standards and testing protocols.
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-green-400 mt-1">▸</span>
-                  Quickly adapted to Agile/Scrum workflows, actively participating in daily stand-ups and sprint planning
+                  Integrated into professional Agile/Scrum workflows, contributing to sprint planning and daily technical syncs.
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-green-400 mt-1">▸</span>
-                  Collaborated with team members with real projects and code reviews
+                  Collaborated on large-scale codebases using Git flow, conducting code reviews to ensure maintainability and clean architecture.
                 </li>
               </ul>
             </div>
@@ -365,7 +370,7 @@ const App: React.FC = () => {
           <div className="flex flex-wrap justify-center gap-6 mb-12 text-sm text-zinc-400">
             <a href={links.email} className="flex items-center gap-2 hover:text-white transition-colors">
               <Mail className="w-4 h-4" />
-              mthangtr@gmail.com
+              mthangtr182@gmail.com
             </a>
             <span className="text-zinc-700">|</span>
             <a href={`tel:${links.phone}`} className="flex items-center gap-2 hover:text-white transition-colors">
@@ -392,7 +397,7 @@ const App: React.FC = () => {
           </div>
 
           <PixelButton onClick={() => window.open(links.email)}>
-            Send Message
+            Initialize_Handshake()
           </PixelButton>
         </div>
       </section>

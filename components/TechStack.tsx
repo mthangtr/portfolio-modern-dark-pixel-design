@@ -5,7 +5,7 @@ const techs = [
   { name: "Spring Boot 3", highlight: true },
   { name: "TypeScript", highlight: false },
   { name: "Next.js", highlight: false },
-  { name: "React", highlight: false },
+  { name: "Supabase", highlight: false },
   { name: "PostgreSQL", highlight: false },
   { name: "MongoDB", highlight: false },
   { name: "Redis", highlight: false },
